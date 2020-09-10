@@ -3,7 +3,7 @@ using namespace std;
 set<int> adj[200006];
 int shortPath[200006];
 void bfs(int s, int m) {
-	int k = m -1  ;
+	int k = m - 1;
 	queue<int> q;
 	int p;
 	q.push(s);
@@ -22,7 +22,7 @@ void bfs(int s, int m) {
 }
 int main() {
 	int t;
-	scanf("%d",&t);
+	scanf("%d", &t);
 	while (t--) {
 		int n, m, temp1, temp2, s;
 		memset(shortPath, -1, sizeof shortPath);
@@ -36,10 +36,10 @@ int main() {
 		bfs(s, m);
 		for (int i = 1; i <= m; i++) {
 			adj[i].clear();
-			if(i == s) continue;
+			if (i == s)
+				continue;
 			printf("%d ", shortPath[i]);
 		}
 		printf("\n");
-
 	}
 }
