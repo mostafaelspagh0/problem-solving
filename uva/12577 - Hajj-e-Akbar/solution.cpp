@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main() {
-  freopen("input.txt", "r", stdin);
+  // freopen("input.txt", "r", stdin);
   char c;
   int caseN = 0;
   while (c = getchar(), (c != '*')) {
