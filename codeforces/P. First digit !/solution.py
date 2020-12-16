@@ -1,0 +1,1 @@
+print("EVEN" if int(input()[0]) % 2 == 0 else "ODD" )
